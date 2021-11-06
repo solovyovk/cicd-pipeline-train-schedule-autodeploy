@@ -65,7 +65,7 @@ pipeline {
                     timeout: 30
                 )
                 if (response.status != 200) {
-                error("Smoke test on canary is Failed!")
+                    error("Smoke test on canary is Failed!")
                 }
             }
         }
